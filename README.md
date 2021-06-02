@@ -1,6 +1,6 @@
 # PRoot loader
 
-_Elf loader extracted from PRoot._
+_ELF loader extracted from PRoot._
 
 ## License
 
