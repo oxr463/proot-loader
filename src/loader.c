@@ -23,7 +23,7 @@
 #include <stdbool.h>     /* bool, true, false,  */
 
 #define NO_LIBC_HEADER
-#include "loader/script.h"
+#include "script.h"
 #include "compat.h"
 #include "arch.h"
 
@@ -36,13 +36,13 @@
 #endif
 
 #if defined(ARCH_X86_64)
-#    include "loader/assembly-x86_64.h"
+#    include "assembly-x86_64.h"
 #elif defined(ARCH_ARM_EABI)
-#    include "loader/assembly-arm.h"
+#    include "assembly-arm.h"
 #elif defined(ARCH_X86)
-#    include "loader/assembly-x86.h"
+#    include "assembly-x86.h"
 #elif defined(ARCH_ARM64)
-#    include "loader/assembly-arm64.h"
+#    include "assembly-arm64.h"
 #else
 #    error "Unsupported architecture"
 #endif
